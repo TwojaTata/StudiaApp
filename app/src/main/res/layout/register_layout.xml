@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.LoginAndRegisterActivity"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/registrationHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"
+        android:textSize="20sp"/>
+
+    <EditText
+
+        android:id="@+id/signupEditTextEmail"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+
+        android:id="@+id/signupEditTextPassword"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signupEditTextEmail"
+        android:layout_below="@+id/signupEditTextEmail"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+    <EditText
+
+        android:id="@+id/signupEditTextPasswordAgain"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signupEditTextPassword"
+        android:layout_below="@+id/signupEditTextPassword"
+        android:ems="10"
+        android:hint="@string/password_again"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+
+        android:id="@+id/signupEditTextNickname"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signupEditTextPasswordAgain"
+        android:layout_below="@+id/signupEditTextPasswordAgain"
+        android:ems="10"
+        android:hint="@string/nick_name"
+        android:inputType="textPassword"
+        android:layout_marginBottom="36dp"/>
+
+    <Button
+
+        android:id="@+id/registerButton"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signupEditTextEmail"
+        android:layout_below="@+id/signupEditTextNickname"
+        android:layout_marginBottom="20dp"
+        android:text="@string/register"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
